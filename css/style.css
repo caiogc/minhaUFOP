@@ -1,0 +1,53 @@
+.navbar{
+    color: #8b0000;
+    background-color: #fff;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+h1{
+    font-size: x-large;
+}
+h2{
+    font-size: larger;
+    color: #8b0000;
+    
+}
+#descrição{
+    border-top: 3px solid #8b0000;
+    border: 3px 1px 1px 1px solid #e1e1e1;
+}
+
+#novidades{
+    border: 1px solid #e1e1e1;
+}
+
+h3{
+    font-weight: 400;
+    font-size: medium;
+    
+}
+li::marker {
+    color: #8b0000; 
+}
+
+.card-text{
+    color: #8b0000;
+    font-size: larger;
+
+}
+
+.card:hover{
+    opacity: 50%;
+    transition: opacity .3s;    
+}
+.card:active{
+    background-color: #8b0000; 
+    
+}
+.card-footer{
+    color: #8b0000;
+}
+
+.alpha{
+    color: #8b0000;
+}
