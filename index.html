@@ -7,6 +7,7 @@
     <title>Minha UFOP - Novo Portal</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -23,36 +24,63 @@
         </div>
     </nav>
     <div class="container">
-        <h3 class="text-center bg bg-white p-3 shadow-sm rounded-bottom" id="descrição">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam sint qui ipsam perferendis? Sequi, voluptatem, quas tenetur optio recusandae consequuntur corporis repellat fuga beatae hic, pariatur consectetur tempore ad?
-        </h3>
-        <section class="bg-white rounded-3 p-3 shadow-sm" id="novidades">
+        <section class="bg-white p-3 shadow-sm rounded-bottom" id="novidades">
             <h2 class="text-center mb-3">
                 O que há de novo?
             </h2>
-            <div>
-            <!-- <img src="img/icone-minhaufop.png" alt="acessibilidade" id="icon-acessibilidade"> -->
-            <ul class="ms-3 lh-sm ">
-                <li><h3 class="ms-3" id="aaa">Acessibilidade</h3></li>
-                <li><h3 class="ms-3">Layout moderno</h3></li>
-                <li><h3 class="ms-3">Login pelo Gov.br</h3></li>
-            </ul>       
-            </div>
+            <h3 class="text-center mb-5" id="descrição">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam sint qui ipsam perferendis? Sequi, voluptatem, quas tenetur optio recusandae consequuntur corporis repellat fuga beatae hic, pariatur consectetur tempore ad?
+            </h3>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 shadow-sm rounded-3">
+                    <div class="card-body">
+                        <i class="bi bi-window-dock h2 p-3" id="icons-novidades"></i>
+                        <h3 class="card-text p-3  ">Acessibilidade</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 shadow-sm rounded-3">
+                    <div class="card-body">
+                        <i class="bi bi-window-dock h2 p-3" id="icons-novidades"></i>
+                        <h3 class="card-text p-3">Layout moderno</h3>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 shadow-sm rounded-3">                    
+                    <div class="card-body">
+                        <i class="bi bi-window-dock h2 p-3" id="icons-novidades"></i>
+                        <h3 class="card-text p-3">Login pelo Gov.br</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
         </section>      
-        <section class=" row row-cols-1 justify-content-center mt-5" id="cards-portal">
-            <a class="card text-white col-5 me-md-5" href="https://zeppelin10.ufop.br/minhaUfop/desktop/principal.xhtml">
-                <img src="img/antigoPortal.jpg" class="card-img h-100" alt="Antigo Portal MinhaUFOP">
-                <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                  <h5 class="card-text bg bg-light bg-opacity-75 w-100 shadow-lg text-center">Clique aqui para acessar o Portal antigo</h5>
+
+        <section class=" row row-cols-1 row-cols-md-2 g-5 justify-content-center mt-5" id="cards-portal">
+                <div class="col">
+                    <a class="card h-100" href="https://zeppelin10.ufop.br/minhaUfop/desktop/principal.xhtml">
+                        <img src="img/antigoPortal.jpg" class="card-img-top" alt="antigo Portal minhaUFOP">
+                        <div class="card-body d-flex align-items-center justify-content-center text-center">
+                            <h5 class="card-text" id="title-portal">Clique aqui para acessar o Portal antigo</h5>
+                            </div>
+                            <div class="card-footer text-center">
+                            <small class="text-muted">Disponível somente até o dia 04/04/2022</small>
+                        </div>
+                    </a>
                 </div>
-                <small class="card-footer bg-white text-center">Disponível somente até o dia 04/04/2022</small>
-            </a>
-            <a class="card text-white col-5 ms-md-5" href="https://app.ufop.br/minhaufop/">
-                <img src="img/novoPortal.jpg" class="card-img img-fluid" alt="...">
-                <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                    <h5 class="card-text bg-light w-100 bg-opacity-75 shadow text-center">Clique aqui para acessar o Novo Portal</h5>
+                <div class="col">
+                    <a class="card h-100" href="https://app.ufop.br/minhaufop/">
+                        <img src="img/novoPortal.jpg" class="card-img-top" alt="Novo Portal minhaUFOP">
+                        <div class="card-body d-flex align-items-center justify-content-center text-center">
+                            <h5 class="card-text" id="title-portal" >Clique aqui para acessar o Novo Portal</h5>
+                        </div>
+                    </a>
                 </div>
-            </a>
         </section>
     </div>
 </body>
